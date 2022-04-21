@@ -78,6 +78,7 @@
         
         <!--Mise en place de la variable footer, afin de faciliter la structuration des futures pages html-->
         <xsl:variable name="footer">
+            <br/>
             <footer class="fixed-bottom" style="background-color:b40000">
                 <div style="text-align:center;">
                     <p style="font-size:14px"><FONT color="white">2022 · Soline Doat · Technologies Numériques appliquée à l'histoire - Ecole nationale des chartes</FONT></p>
@@ -185,7 +186,7 @@
                         <p>L'encodage s'est porté sur les chapitres XIII et XIV, parus respectivement les 21 et 22 janvier 1857 dans la Presse.</p>
                         
                     </div>
-                    <!--<a href="Images/La_Presse_21.01_1.JPEG"/>-->
+                    <center><img src="https://raw.githubusercontent.com/dtsoline/TEI-XSL_LaDaniella/main/Images/La_Presse_21.01_1.JPEG" width="500"/></center>
                     <div class="container" style="text-align:justify">
                         <p>
                             L'objectif poursuivi par ce projet est de proposer une transcription du
