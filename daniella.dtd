@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ENTITY ens  "<choice><orig>ens</orig><reg>ents</reg></choice>" >
+<!ENTITY ans  "<choice><orig>ans</orig><reg>ants</reg></choice>" >
+
+<!ENTITY skpr "<choice><sic>Shakspeare</sic><corr>Shakespeare</corr></choice>" >
+
+<!ENTITY lb '<lb rend="hyphen"/>'>
+<!ENTITY j "<rs ref='#jeanValreg'>j'</rs>" >
+<!ENTITY J "<rs ref='#jeanValreg'>J'</rs>" >
+<!ENTITY je '<rs ref="#jeanValreg">je</rs>' >
+<!ENTITY Je '<rs ref="#jeanValreg">Je</rs>' >
+
+<!ENTITY Medora '<persName ref="#Medora">Médora</persName>' >
+<!ENTITY Lord-B '<persName ref="#lordB">lord B***</persName>' >
+<!ENTITY Rome '<placeName ref="#rome">Rome</placeName>' >
+
+<!ENTITY reproduction-interdite '<floatingText><body><p>La reproduction est interdite. - Voir la Presse du 6 au 20 janvier.</p></body></floatingText>' >

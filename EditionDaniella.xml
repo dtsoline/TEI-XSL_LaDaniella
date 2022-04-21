@@ -1,0 +1,1151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI SYSTEM "daniella.dtd">
+<?xml-model href="out/ODD_Daniella.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="out/ODD_Daniella.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+      <teiHeader>
+            <!-- Description biblio fichier numérique et la source -->
+            <fileDesc>
+                  <titleStmt>
+                        <title>La Daniella</title>
+                        <author>
+                              <persName ref="https://data.bnf.fr/fr/11923601/george_sand/" xml:id="GS">
+                                    <forename>George</forename>
+                                    <surname>Sand</surname>
+                              </persName>
+                        </author>
+                  </titleStmt>
+
+                  <editionStmt>
+                        <edition> Exercice XML TEI - Ecole nationale des chartes Master TNAH <date
+                                    when="2022-01">Janvier 2022</date>
+                        </edition>
+                        <respStmt>
+                              <resp>Transcription et encodage du roman-journal</resp>
+                              <persName xml:id="SD">
+                                    <forename>Soline</forename>
+                                    <surname>Doat</surname>
+                              </persName>
+                        </respStmt>
+                  </editionStmt>
+
+                  <publicationStmt>
+                        <publisher>Éditions en ligne de l’École des chartes</publisher>
+                        <pubPlace>Paris</pubPlace>
+                        <date when="2022-01">Janvier 2022</date>
+                        <availability>
+                              <licence
+                                    target="https://creativecommons.org/licenses/by-sa/3.0/deed.fr">Licence Creative Commons Attribution-partage dans les mêmes conditions</licence>
+                        </availability>
+                  </publicationStmt>
+
+
+                  <sourceDesc>
+                        <biblStruct>
+                              <analytic>
+                                    <author ref="#GS">
+                                          <forename>George</forename>
+                                          <surname>Sand</surname>
+                                    </author>
+                                    <title>La Daniella</title>
+                              </analytic>
+
+                              <monogr xml:id="Daniella21.01">
+                                    <title>Chapitre XIII</title>
+                                    <idno>ark:/12148/bpt6k477561d</idno>
+                                    <respStmt>
+                                          <resp>Directeur de publication</resp>
+                                          <persName>Émile de Girardin</persName>
+                                          <persName>Georges Laguerre</persName>
+                                    </respStmt>
+                                    <imprint>
+                                          <date when="1857-01-21">21 janvier 1857</date>
+                                          <pubPlace>Paris</pubPlace>
+                                    </imprint>
+                                    <biblScope unit="page" from="1" to="2"/>
+                              </monogr>
+
+                              <monogr xml:id="Daniella22.01">
+                                    <title>Chapitre XIV</title>
+                                    <idno>ark:/12148/bpt6k477562s</idno>
+                                    <respStmt>
+                                          <resp>Directeur de publication</resp>
+                                          <persName>Émile de Girardin</persName>
+                                          <persName>Georges Laguerre</persName>
+                                    </respStmt>
+                                    <imprint>
+                                          <date when="1857-01-22">22 janvier 1857</date>
+                                          <pubPlace>Paris</pubPlace>
+                                    </imprint>
+                                    <biblScope unit="page" from="1" to="2"/>
+                              </monogr>
+                        </biblStruct>
+
+
+
+                        <biblFull>
+                              <titleStmt>
+                                    <title>La Daniella</title>
+                                    <author ref="https://data.bnf.fr/fr/11923601/george_sand/">
+                                          <forename>George</forename>
+                                          <surname>Sand</surname>
+                                    </author>
+                              </titleStmt>
+                              <publicationStmt>
+                                    <publisher> Maison d'édition</publisher>
+                                    <pubPlace>
+                                          <address>
+                                                <country key="FR"/>
+                                                <settlement type="city">Paris</settlement>
+                                          </address>
+                                    </pubPlace>
+                                    <distributor>Gallica Bibliothèque nationale de
+                                          France</distributor>
+                                    <availability>
+                                          <licence
+                                                target="https://gallica.bnf.fr/edit/und/conditions-dutilisation-des-contenus-de-gallica"
+                                                >Domaine public</licence>
+                                    </availability>
+                              </publicationStmt>
+                        </biblFull>
+                  </sourceDesc>
+            </fileDesc>
+
+            <profileDesc>
+                  <particDesc>
+                        <!--Personnes réelles-->
+                        <listPerson type="real">
+                              <person xml:id="socrate">
+                                    <persName>Socrate</persName>
+                                    <note>philosophe grec du Ve siècle</note>
+                              </person>
+                              <person xml:id="stPierre">
+                                    <persName>Saint-Pierre</persName>
+                              </person>
+                              <person xml:id="Adrien">
+                                    <persName>Adrien</persName>
+                              </person>
+                              <person xml:id="FromentMeurice">
+                                    <persName>Froment-Meurice</persName>
+                                    <note>joaillier et orfèvre parisien du XIXe siècle</note>
+                              </person>
+                              <person xml:id="Shakespeare">
+                                    <persName>Shakespeare</persName>
+                                    <note>dramaturge, poète et acteur anglais du XVIe siècle</note>
+                              </person>
+                        </listPerson>
+
+                        <!-- Personnages propres à La Daniella-->
+                        <listPerson type="fictional">
+                              <person xml:id="jeanValreg">
+                                    <persName>Jean Valreg</persName>
+                                    <note>Narrateur</note>
+                                    <!-- L'histoire rend forme sous forme de lettres dans lesquelles Jean Valreg raconte ses aventures en Italie -->
+                              </person>
+                              <person xml:id="laMariuccia">
+                                    <persName>La Mariuccia</persName>
+                                    <note>gardienne de la <placeName>villa 
+                                          Piccolomini</placeName></note>
+                              </person>
+                              <person xml:id="Brumieres">
+                                    <persName>Brumières</persName>
+                                    <note>Peintre rencontré à Marseille</note>
+                              </person>
+                              <person xml:id="cocher">
+                                    <persName>cocher</persName>
+                                    <note>le nom n'est pas mentionné</note>
+                                    <note>assure la fonction de cocher de Lord B*** et de Lady Harriet</note>
+                              </person>
+                              <person xml:id="ladyHarriet">
+                                    <persName>lady Harriet</persName>
+                                    <note>épouse de Lord B*** et tante de Miss Medora</note>
+                                    <note>apparaît également sous le nom de Lady B***</note>
+                                    <note>anglaise</note>
+                              </person>
+                              <person xml:id="lordB">
+                                    <persName>lord B***</persName>
+                                    <note>époux de Lady Harriet et oncle de Miss Medora</note>
+                                    <note>anglais</note>
+                              </person>
+                              <person xml:id="Medora">
+                                    <persName>Miss Médora</persName>
+                                    <note>nièce de lady Harriet</note>
+                              </person>
+                              <person xml:id="tartaglia">
+                                    <persName>Tartaglia</persName>
+                              </person>
+                              <person xml:id="daniella">
+                                    <persName>Daniella</persName>
+                                    <note>Suivante de Miss Médora</note>
+                              </person>
+                              <person xml:id="malone">
+                                    <persName>Malone</persName>
+                              </person>
+                              <person xml:id="gardien">
+                                    <persName>Gardien du gouffre</persName>
+                              </person>
+                        </listPerson>
+
+                        <!--figures mythologiques, provenant d'autres histoires-->
+                        <listPerson type="mythic">
+                              <person xml:id="Cup">
+                                    <persName>Cupidon</persName>
+                              </person>
+                              <person xml:id="Pandore">
+                                    <persName>Pandore</persName>
+                              </person>
+                              <person xml:id="Mab">
+                                    <persName>Reine Mab</persName>
+                                    <note>Fée</note>
+                                    <note>référence au personnage de la pièce Roméo et Juliette de
+                                          Shakespeare</note>
+                              </person>
+                              <person xml:id="Sardanapale">
+                                    <persName>Sardanapale</persName>
+                              </person>
+                        </listPerson>
+                  </particDesc>
+
+                  <settingDesc>
+                        <listPlace>
+                              <place xml:id="frascati">
+                                    <placeName key="IT">Frascati</placeName>
+                              </place>
+                              <place xml:id="vilaP">
+                                    <placeName key="IT">villa Piccolomini</placeName>
+                              </place>
+                              <place xml:id="mtJanvier">
+                                    <placeName>mont Janvier</placeName>
+                              </place>
+                              <place xml:id="paris" type="city">
+                                    <placeName key="FR">Paris</placeName>
+                              </place>
+                              <place xml:id="bordeaux" type="city">
+                                    <placeName key="FR">Bordeaux</placeName>
+                              </place>
+                              <place xml:id="tivoli">
+                                    <placeName key="IT">Tivoli</placeName>
+                              </place>
+                              <place xml:id="solfatare">
+                                    <placeName key="IT">solfatare</placeName>
+                              </place>
+                              <place xml:id="rome" type="city">
+                                    <placeName key="IT">Rome</placeName>
+                                    <note>Capitale de l'Italie</note>
+                              </place>
+                              <place xml:id="vatican" type="country">
+                                    <placeName key="IT">Vatican</placeName>
+                                    <note>ville-État se situant dans Rome</note>
+                              </place>
+                              <place xml:id="france" type="country">
+                                    <placeName key="FR">France</placeName>
+                              </place>
+                              <place xml:id="venetie" type="region">
+                                    <placeName key="IT">Vénétie</placeName>
+                                    <note>Région du nord-est de l'Italie</note>
+                              </place>
+                              <place xml:id="lacstartari">
+                                    <placeName>lacs dei tartari</placeName>
+                              </place>
+                              <place xml:id="etnas">
+                                    <placeName key="IT">Etnas</placeName>
+                              </place>
+                              <place xml:id="provence" type="region">
+                                    <placeName key="FR">Provence</placeName>
+                              </place>
+                              <place xml:id="chamounix" type="city">
+                                    <placeName key="FR">Chamounix</placeName>
+                              </place>
+                              <place xml:id="AgroRomano">
+                                    <placeName key="IT">Agro Romano</placeName>
+                              </place>
+                              <place xml:id="Jerusalem" type="city">
+                                    <placeName>Jérusalem</placeName>
+                              </place>
+                              <place xml:id="AguaArgentina">
+                                    <placeName>Agua argentina</placeName>
+                              </place>
+
+                        </listPlace>
+                  </settingDesc>
+            </profileDesc>
+      </teiHeader>
+
+      <facsimile>
+            <surface>
+                  <graphic url="images/La_Presse_21.01_1.JPEG" width="1024px" height="1461px"/>
+                  <zone xml:id="c1" ulx="13" uly="969" lrx="216" lry="1432"/>
+                  <zone xml:id="c2" ulx="217" uly="966" lrx="414" lry="1428"/>
+                  <zone xml:id="c3" ulx="409" uly="966" lrx="607" lry="1429"/>
+                  <zone xml:id="c4" ulx="606" uly="964" lrx="804" lry="1433"/>
+                  <zone xml:id="c5" ulx="802" uly="961" lrx="1005" lry="1431"/>
+            </surface>
+            <surface>
+                  <graphic url="images/La_Presse_21.01_2.JPEG" width="1024.4px" height="1460.4px"/>
+                  <zone xml:id="c6" ulx="11" uly="947" lrx="210" lry="1414"/>
+                  <zone xml:id="c7" ulx="211" uly="946" lrx="407" lry="1410"/>
+                  <zone xml:id="c8" ulx="406" uly="946" lrx="599" lry="1414"/>
+                  <zone xml:id="c9" ulx="602" uly="946" lrx="792" lry="1411"/>
+                  <zone xml:id="c10" ulx="798" uly="946" lrx="997" lry="1414"/>
+            </surface>
+            <surface>
+                  <graphic url="images/La_Presse_22.01_1.jpeg" width="2047.66666px"
+                        height="2889.66666px"/>
+                  <zone xml:id="c11" ulx="1608" uly="1916" lrx="2030" lry="2828"/>
+                  <zone xml:id="c12" ulx="1219" uly="1919" lrx="1619" lry="2831"/>
+                  <zone xml:id="c13" ulx="830" uly="1932" lrx="1230" lry="2828"/>
+                  <zone xml:id="c14" ulx="438" uly="1935" lrx="848" lry="2828"/>
+                  <zone xml:id="c15" ulx="59" uly="1929" lrx="451" lry="2836"/>
+            </surface>
+            <surface>
+                  <graphic url="images/La_Presse_22.01_2.jpeg" width="2047.66666px"
+                        height="2884.66666px"/>
+                  <zone xml:id="c16" ulx="59" uly="1928" lrx="467" lry="2843"/>
+                  <zone xml:id="c17" ulx="462" uly="1928" lrx="854" lry="2832"/>
+                  <zone xml:id="c18" ulx="848" uly="1920" lrx="1240" lry="2824"/>
+                  <zone xml:id="c19" ulx="1240" uly="1920" lrx="1624" lry="2829"/>
+                  <zone xml:id="c20" ulx="1630" uly="1917" lrx="2016" lry="2837"/>
+            </surface>
+      </facsimile>
+
+
+      <text>
+            <body>
+
+                  <div1 n="1" type="chapter" facs="#Daniella21.01">
+                        <pb n="1"/>
+
+                        <cb n="1" facs="#c1" next="#c2"/>
+                        <head>
+                              FEUILLETON DE LA PRESSE Du 
+                              <date when="1857-01-21">mercredi soir 21 janvier 1857.</date>
+                              <title>La Daniella.</title> XIII.
+                        </head>
+
+                        <p>
+                              <placeName ref="#frascati">Frascati</placeName>, 
+                              <placeName ref="#villaP">villa Piccolomini</placeName>, 
+                              <date when="--04-01">1er avril.</date>
+                        </p>
+
+                        <p>
+                              <lb/>Les nuées violettes du couchant n’avaient pas 
+                              <lb/>menti : il a  fait, cette nuit, une tempête comme je 
+                              <lb/>n’en ai jamais entendu. Malgré l’épaisseur des 
+                              <lb/>murs et la petitesse des fenêtres, circonstances 
+                              <lb/>qui me semblaient devoir assourdir le vacarme
+                              <lb/>extérieur, &j;ai cru que la <placeName ref="#villaP">villa Piccolomini</placeName> s’envo&lb;lerait à travers ces espaces sans bornes que mon 
+                              <lb/>œil contemplait hier soir. &j;ai dormi malgré tout ; 
+                              <lb/>mais &j;ai rêvé dix fois que &j;étais en pleine mer sur 
+                              <lb/>un navire qui volait en éclats. Il pleut fin et serré, 
+                              <lb/>ce matin. Le colossal paysage que &je; vous décri&lb;vais n’existe plus. Plus de <persName ref="#mtJanvier">mont Janvier,</persName> plus de 
+                              <lb/><persName ref="#socrate">Socrate</persName>, plus de <persName ref="#stPierre">Saint-Pierre</persName>, plus de Tibre, plus 
+                              <lb/>de mer. C’est gris comme une matinée de <placeName ref="#paris">Paris</placeName>.
+                              <lb/>&Je; ne distingue que les maisons de <placeName ref="#frascati">Frascati</placeName> sous 
+                              <lb/>mes pieds, car la <placeName ref="#villaP">villa Piccolomini</placeName>, placée à une 
+                              <lb/>extrémité de la ville, occupe le premier plan d’un
+                              <lb/>système de terrasses naturelles verdoyantes qu’il 
+                              <lb/><rs ref="#jeanValreg">me</rs> tarde d’explorer.
+                        </p>
+
+                        <p>
+                              <lb/><persName ref="#laMariuccia">La Mariuccia</persName> vient de <rs ref="#jeanValreg">m’</rs>apporter une tasse de 
+                              <lb/>lait passable ; et, en attendant que &je; puisse sor&lb;tir, &je; vais vous raconter les circonstances que 
+                              <lb/>&j;ai omises dans mon bulletin d’hier.
+                        </p>
+
+                        <p>
+                              <lb/>Il s’agit d’une course à <placeName ref="#tivoli">Tivoli</placeName> que &je; vous ai 
+&reproduction-interdite;
+                              <cb n="2" facs="#c2" prev="#c1" next="#c3"/>
+
+                              <lb/>sommairement indiquée et dont les faits me pa&lb;raissent si étranges aujourd’hui, que j’ai besoin
+                              <lb/>de me bien tâter pour m’assurer que je n’ai pas 
+                              <lb/>rêvé cela pendant ma fièvre.
+                        </p>
+
+                        <p>
+                              <lb/>&j;aime bien à être seul, ou tout au moins avec 
+                              <lb/>des artistes, pour aller à la découverte des belles
+                              <lb/>choses ; mais <rs ref="#lordB #ladyHarriet #Medora">la famille B***</rs> avait décrété, le 26 
+                              <lb/>du mois dernier, qu’elle irait à <placeName ref="#tivoli">Tivoli</placeName> et que &je;
+                              <lb/>serais de la partie. On n’invita pas <persName ref="#brumieres">Brumières</persName>, 
+                              <lb/>quoiqu’il eût pu y avoir place pour <rs ref="#brumieres">lui</rs> dans la 
+                              <lb/>calèche. &J;offrais de me mettre sur le siège avec
+                              <lb/>le <rs ref="#cocher">cocher</rs> ; mais ma proposition fut comme élu&lb;dée, et, croyant <rs ref="#jeanValreg">m’</rs>apercevoir d’une certaine op&lb;position, surtout de la part de <persName ref="#ladyB">lady B***</persName>, &je; n’o&lb;sai pas insister, et &je; m’abstins de prévenir <persName ref="#brumieres">Bru&lb;mières</persName> de la possibilité de son admission.
+                        </p>
+
+                        <p>
+                              <lb/>La route <rs ref="#jeanValreg">m’</rs>ennuya beaucoup jusqu’à la <placeName ref="#solfatare">solfa&lb;tare</placeName>, où l’intérêt géologique commence. Il faisait
+                              <lb/>tour à tour trop chaud et trop froid ; <persName ref="#ladyHarriet">lady Har&lb;riet</persName> et sa <rs ref="#Medora">nièce</rs> ne cessaient de vouloir forcer
+                              <lb/>&Lord-B;, et <rs ref="#jeanValreg">moi</rs> par contre-coup, à <rs ref="#jeanValreg #lordB">nous</rs> extasier 
+                              <lb/>sur la poésie, sur la beauté de la plaine, et, par 
+                              <lb/>toutes les raisons que &je; vous en ai données, &je;
+                              <lb/>trouvais cette interminable solitude sans ca&lb;ractère, insupportable à traverser. <rs ref="#lordB #ladyHarriet #Medora #jeanValreg #cocher">Nous</rs> al&lb;lions pourtant aussi vite que possible, <persName ref="#lordB">lord 
+                              <lb/>B***</persName> ayant fait l’acquisition de quatre ma&lb;gnifiques chevaux du pays. C’est une race pré&lb;cieuse. Ils ne sont pas très grands, mais as&lb;sez doublés sans être lourds ; ils trottent vite ; 
+                              <lb/>ils ont de l’ardeur et de la solidité. Leur robe est
+                              <lb/>d’un beau noir, leur poil très-fin et brillant. La 
+                              <lb/>tête est un peu commune, le pied un peu vache, 
+                              <lb/>mais les formes sont belles quant au reste. Ils ont 
+                              <lb/>le caractère hargneux, et il ne se passe pas d’heure 
+                              <lb/>où l’on ne voie, à &Rome; ou autour de &Rome;, des 
+                              <lb/>querelles sérieuses entre hommes et bêtes. Ca&lb;valiers et cochers sont intrépides, mais générale&lb;ment équitent ou conduisent avec plus de har&lb;diesse, de violence et d’obstination que de véri&lb;table adresse et de raisonnement. Pourtant, les 
+                              <lb/>accidents sont rares, les chevaux ne manquent 
+                              <lb/>jamais par les jambes et descendent à fond de 
+                              <lb/>train, sur les dalles, les pentes les plus rapides 
+                              <lb/>des collines de la métropole. 
+                        </p>
+
+                        <p>
+                              <lb/>&Je; remarquai, avec &Lord-B;, qui essayait cet
+                              <lb/>attelage avec attention pour la première fois, que 
+                              <lb/>le type de ces animaux était exactement celui du 
+                              <lb/>cheval de bronze doré d’<persName ref="#adrien">Adrien</persName>, dans la cour du
+
+                              <cb n="3" facs="#c3" prev="#c2" next="#c4"/>
+
+                              <lb/><placeName ref="#vatican">Vatican</placeName>. <rs ref="#lordB">Il m’</rs>a dit, et &je; l’ai oublié, de quelle 
+                              <lb/>partie des Etats de l’Eglise ils proviennent. Ce n’est
+                              <lb/>pas de l´<placeName ref="#AgroRomano"><foreign xml:lang="lat" rend="italic">agro romano</foreign></placeName>, <rs ref="#jeanValreg">je</rs> présume, car tous les 
+                              <lb/>élèves que l’on voit courir dans la steppe sont 
+                              <lb/>rachitiques et d’une race vulgaire, ainsi que les 
+                              <lb/>jum&ens; qui les produisent. Les bœufs y sont 
+                              <lb/>également petits et laids, bien qu’ils appar&lb;tiennent à cette belle espèce d’un blanc de
+                              <lb/>lait, aux cornes démesurées, que l’on voit em&lb;ployée aux transports sur les routes, et aux tra&lb;vaux des champs dans la région des monta&lb;gnes. cette espèce est fort étrange. Elle est en&lb;core très petite relativement à nos espèces de 
+                              <lb/><placeName ref="#france">France</placeName> ; mais la finesse de ses formes et de son 
+                              <lb/>poil, la beauté de ses jambes et de sa face de&lb;vraient en faire, pour les artistes, le type de la 
+                              <lb/>race bovine. On emploie pourtant le buffle de 
+                              <lb/>préférence dans les tableaux de l’école romaine, 
+                              <lb/>sans doute à cause de son étrangeté ; mais le 
+                              <lb/>buffle est un hideux animal. 
+                        </p>
+
+                        <p>
+                              <lb/>Cette race de bœufs blancs est, <rs ref="#jeanValreg">m’</rs>a-t-on dit, 
+                              <lb/>originaire de la <placeName ref="#venetie">Vénétie</placeName> ; mais le développement 
+                              <lb/>vraiment fantastique des cornes me parait une 
+                              <lb/>dégénérescence due au sol romain, et une preuve 
+                              <lb/>de faiblesse plutôt que de vigueur. On laboure ici 
+                              <lb/>avec tout ce qui tombe sons la main dans la prai&lb;rie : bœufs, vaches, ânes ou chevaux ; mais on la&lb;boure très mal, sans s’occuper de l’écoulement des 
+                              <lb/>eaux, sans assainir ni unir le terrain. La terre est
+                              <lb/>légère et le climat favorable ; mais la grande ques&lb;tion pour les laboureurs est de se dépêcher, et de 
+                              <lb/>séjourner le moins possible sur ces terrains pes&lb;tilentiels. Tous sont étrangers au terroir. Journa&lb;liers nomades, ils couchent, pendant la quinzaine 
+                              <lb/>des travaux, dans ces ruines ou ces paillis 
+                              <lb/>qui servent de point de repère dans l’étendue ; 
+                              <lb/>puis, ils disparaissent en toute hâte et vont cher&lb;cher de l’ouvrage dans des lieux plus salubres, 
+                              <lb/>jusqu’à ce qu’ils reviennent faire la moisson de 
+                              <lb/>ces semences abandonnées aux influences natu&lb;relles, et totalement privées de soins jusqu’à leur 
+                              <lb/>maturité. 
+                        </p>
+
+                        <p>
+                              <lb/>Les animaux, abandonnés avec presque autant 
+                              <lb/>d’incurie que les végétaux, se ressentent aussi du 
+                              <lb/>mauvais air. Dès que l’on s’élève au-dessus de 
+                              <lb/>ces régions funestes, les races grandissent et em&lb;bellissent comme les plantes. 
+                        </p>
+
+                        <p>
+                              <lb/>Les plus jolis animaux que l’on voie ici sont 
+                              <lb/>les chèvres. Un vaste troupeau de race cachemi
+
+                              <cb n="4" facs="#c4" prev="#c3" next="#c5"/>
+                              &lb;rienne était littéralement couché et endormi com&lb;me un seul être sur le bord du chemin, et, au mi&lb;lieu de ce troupeau, dormait aussi un enfant vêtu 
+                              <lb/>de la peau d’une des chèvres et couché, pêle-mê&lb;le avec les petits chevreaux. Au bruit de la voitu&lb;re tout s’éveilla en sursaut, tout bondit à la fois 
+                              <lb/>sous le coup d’une terreur indicible. Ce fut com&lb;me un nuage de soie blanche qui s’envolait en
+                              <lb/>rasant le sol, les cabris se livrant à des cabrioles
+                              <lb/>échevelées, les mères faisant flotter leurs franges
+                              <lb/>éclatantes à la brise, le petit berger, propre et 
+                              <lb/>blanc aussi, parce qu’il n’avait d’autre vêtement 
+                              <lb/>que sa toison neuve, courant éperdu, tombant et 
+                              <lb/>se relevant pour fuir avec ses bêtes effarou&lb;chées.
+                        </p>
+
+                        <p>
+                              <lb/>On arrêta la calèche pour jouir de cette scène. 
+                              <lb/>&Je; descendis et parvins à rassurer le petit sau&lb;vage, qui consentit à me laisser prendre un de 
+                              <lb/>ses chevreaux pour le montrer de près à <persName ref="#Medora">miss 
+                              <lb/>Médora</persName>. 
+                        </p>
+
+                        <p>
+                              <lb/>C’est ici, mon ami, que commence l’étrange 
+                              <lb/>aventure. La belle &Medora; prit le petit animal
+                              <lb/>sur ses genoux, le caressa, lui fit manger du pain, 
+                              <lb/>le dorelotta jusqu’à ce que &Lord-B;, impatienté, 
+                              <lb/>lui eût rappelé que le temps s’écoulait et que
+                              <lb/>nous n’avions pas trop de la journée pour voir 
+                              <lb/>Tivoli à la hâte et revenir à &Rome;. Puis, lors&lb;qu’<rs ref="#Medora">elle</rs> me rendit le chevreau, après avoir atta&lb;ché sur <rs ref="#jeanValreg">moi</rs> un regard tout à fait inexplicable,
+                              <lb/><rs ref="#Medora">elle</rs> se rejeta dans le fond de la voiture et cou&lb;vrit son visage de son mouchoir.
+                        </p>
+
+                        <p>
+                              <lb/>Ce mouvement <rs ref="#jeanValreg">me</rs> fit croire que le cabri sen&lb;tait mauvais et que <persName ref="#Medora">miss Médora</persName>, s’en aperce&lb;vant tout à coup, respirait son mouchoir parfumé.
+                        </p>
+
+
+                        <p>
+                              <lb/>&Je; me hâtai de reporter le chevreau au chevrier 
+                              <lb/>qui ne manqua pas de <rs ref="#jeanValreg">me</rs> tendre la main avant 
+                              <lb/>que &j;eusse eu le temps de porter la mienne à ma 
+                              <lb/>poche pour y prendre, à son intention, quelques 
+                              <lb/>baïoques. Mais, quand <rs ref="#jeanValreg">je</rs> remontai en voiture, &je;
+                              <lb/>vis &Medora; sanglotant, <rs ref="#ladyHarriet">sa tante</rs> s’efforçant de la 
+                              <lb/>calmer, et <persName ref="#LordB">mylord</persName> siflant entre ses dents un <foreign xml:lang="lat" rend="italic">lila
+                              <lb/>burello</foreign> quelconque, de l’air d’un homme embar&lb;rassé d’une scène ridicule. Cette situation incom&lb;préhensible <rs ref="#jeanValreg">me</rs> mit fort mal à l’aise. &Je; me hasar&lb;dai à demander si <persName ref="#Medora">miss Médora</persName> était malade. 
+                              <lb/>Aussitôt le mouchoir cessa de cacher son visage, 
+                              <lb/>et, à travers de grosses larmes qui coulaient en&lb;core, <rs ref="#Medora">elle</rs> <rs ref="#jeanValreg">me</rs> regarda d’un air étrange, en <rs ref="#jeanValreg">me</rs> ré
+
+                              <cb n="5" facs="#c5" prev="#c4" next="#c6"/>
+                              &lb;pondant, d’un ton enjoué, qu’<rs ref="#Medora">elle</rs> ne s’était jamais 
+                              <lb/>sentie si bien.
+                        </p>
+
+                        <p>
+                              <lb/><said who="#ladyHarriet" aloud="true" toWhom="#jeanValreg">— Oui,oui,</said> se hâta de dire <persName ref="#ladyB">lady B***</persName>. <said who="#ladyHarriet" aloud="true" toWhom="#jeanValreg">Ce n’est 
+                              <lb/>rien ; qu’un peu de mal aux nerfs.</said>
+                        </p>
+
+                        <p>
+                              <lb/>Et &Lord-B; ajouta : <said aloud="true" who="lordB">— Certainement, certai&lb;nement,des nerfs, et rien de plus.</said>
+                        </p>
+
+                        <p>
+                              <lb/><said aloud="false" who="#jeanValreg">Cela <rs ref="#jeanValreg">m'</rs>est égal,</said> pensai-<rs ref="#jeanValreg">je</rs> ; et, au bout de peu 
+                              <lb/>d’instants, <rs ref="#jeanValreg">je</rs> trouvai un prétexte pour monter sur
+                              <lb/>le siège à côté du <rs ref="#cocher">cocher</rs>, liberté à laquelle &j;as&lb;pirais depuis longtemps, et plus vivement encore 
+                              <lb/>depuis cette scène mystérieuse où mon rôle était 
+                              <lb/>nécessairement celui d’un indifférent incommode 
+                              <lb/>ou d’un indiscret mal appris. 
+                        </p>
+
+                        <p>
+                              <lb/>Un peu plus loin, on s’arrêta pour voir les <placeName ref="#lacsDeiTartari">pe&lb;tits lacs <foreign xml:lang="lat" rend="italic">dei tartari</foreign></placeName><note n="1" place="foot">C'est à dire des tartres, et non pas des tartares, comme traduisent quelques voyageurs</note> et la curieuse cristallisation
+                              <lb/>sulfureuse qui les environne. Figurez-vous plu&lb;sieurs millions de petits cônes volcaniques s’é&lb;levant de quelques pieds au-dessus du sol, ayant 
+                              <lb/>chacun sa cheminée principale et ses bouches 
+                              <lb/>adjacentes, plusieurs millions d'<placeName ref="#etnas">Etnas</placeName> en mi&lb;niature. Au premier abord, cela ressemble à
+                              <lb/>une végétation étrange, pétrifiée sur pied. Et 
+                              <lb/>puis cela vous apparaît comme un liquide 
+                              <lb/>en fusion qui se serait candi tout à coup au milieu 
+                              <lb/>d’une ébullition violente. Autour de ce champ de
+                              <lb/>cratères, et sur les bords de ces flaques d’eau sé&lb;dimenteuses que l’on nomme des lacs, s’étendent
+                              <lb/>des haies d’autres cristallisations incompréhensi&lb;bles, que l’on dit être des plantes pétrifiées ; mais 
+                              <lb/>je n’en suis pas sûr, et je crois voir là, comme 
+                              <lb/>dans les cônes voisins, les caprices du bouillon&lb;nement refroidi d’un volcan de boue et de soufre. 
+                        </p>
+
+                        <p>
+                              <lb/>&Je; parcourais tout cela avec beaucoup de cu&lb;riosité, <rs ref="#jeanValreg">me</rs> hâtant de casser quelques échantil&lb;lons, lorsque &je; vis recommencer les larmes de 
+                              <lb/>&Medora;. Sa <rs ref="#ladyHarriet">tante</rs> la gronda un peu et se dépêcha 
+                              <lb/>de <rs ref="#Medora">me</rs> ramener à la voiture. <persName ref="#lordB">Lord B***</persName>
+                              <rs ref="#jeanValreg">me</rs> dit : 
+                              <lb/><said who="#lordB" aloud="true">Venez ! nous reviendrons ici <rs ref="#lordB #jeanValreg">tous les deux</rs>, si cet
+                              <lb/>endroit <rs ref="#jeanValreg">vous</rs> intéresse. En ce moment, vous voyez 
+                              <lb/>que <rs ref="#Medora">ma chère nièce</rs> a un accès de folie. </said>
+                              <lb/><said who="#jeanValreg" aloud="true" toWhom="#lordB">— Vraiment !</said> <rs ref="#jeanValreg">m'</rs>écriai-&je; consterné, <said who="#jeanValreg" aloud="true" toWhom="#lordB">cette belle 
+                              <lb/>personne est sujette… </said>
+                              <lb/><said who="#lordB" aloud="true" toWhom="#jeanValreg">— Non,non,</said> reprit en riant <persName ref="#lordB">lord B***</persName>, <said who="#lordB" aloud="true" toWhom="#jeanValreg"><rs ref="#Medora">elle</rs> n’est 
+                              <lb/>pas aliénée ; <rs ref="#Medora">elle</rs> n’est que folle à la manière de 
+                              <lb/><rs ref="#ladyHarriet">ma femme</rs>, qui prend cela au sérieux, et vous sa&lb;vez bien la cause de toutes ces bizarreries.</said>
+
+                              <pb n="2"/>
+                              <cb n="6" facs="#c6" prev="#c5" next="#c7"/>
+
+                              <lb/><said who="#jeanValreg" aloud="true" toWhom="#lordB">— <rs ref="#jeanValreg">Moi</rs> ? &Je; ne sais rien, &je; <rs ref="#lordB">vous</rs> le jure ! </said>
+                              <lb/><said who="#lordB" aloud="true" toWhom="#jeanValreg">— <rs ref="#lordB">Vous</rs> n’en savez rien ?</said> dit &Lord-B; en <rs ref="#jeanValreg">m'</rs>ar &lb;rêtant et en me regardant fixement ; <said who="#lordB" aloud="true" toWhom="#jeanValreg"><rs ref="#jeanValreg">vous</rs> en don&lb;neriez votre parole d’honneur ?</said>
+                              <lb/><said who="#jeanValreg" aloud="true" toWhom="#lordB">— <rs ref="#jeanValreg">Je</rs> vous la donne !</said> répondis-&je; avec la plus
+                              <lb/>parfaite simplicité. 
+                              <lb/><said who="#lordB" aloud="true" toWhom="#jeanValreg">— Tiens ! c’est singulier,</said> reprit-<rs ref="#lordB">il</rs>. <said who="#lordB" aloud="true" toWhom="#jeanValreg">Eh bien, <rs ref="#lordB #jeanValreg">nous</rs>
+                              <lb/>reparlerons de cela plus tard, s’il y a lieu.</said> Et,
+                              <lb/>sans <rs ref="#jeanValreg">me</rs> donner le temps de <rs ref="#lordB">l’</rs>interroger, <rs ref="#lordB">il</rs> <rs ref="#jeanValreg">me</rs> ra&lb;mena à la voiture et <rs ref="#jeanValreg">me</rs> força de lui céder ma pla&lb;ce sur le siège, voulant, disait-<rs ref="#lordB">il</rs>, conduire lui&lb;même, pour essayer la bouche de ses chevaux. 
+                        </p>
+
+                        <p>
+                              <lb/>Mon malaise recommença, comme vous pou&lb;vez croire. Les <rs ref="#Medora #ladyHarriet">deux Anglaises</rs> furent d’abord 
+                              <lb/>muettes. <persName ref="#ladyB">Lady B***</persName> paraissait aussi embarrassée 
+                              <lb/>que moi. <rs ref="#Medora">Sa nièce</rs> pleurait toujours. Forcé par 
+                              <lb/>les assertions de <persName ref="#ladyHarriet">lady Harriet</persName> à regarder ces lar&lb;mes comme une crise de nerfs, <rs ref="#jeanValreg">je</rs> ne savais quel&lb;les idées suggérer pour y remédier. &j;ouvrais et 
+                              <lb/>refermais les glaces, ne trouvant rien de mieux 
+                              <lb/>que de donner de l’air ou de préserver de la 
+                              <lb/>poussière. Enfin, nous commençâmes à gravir au 
+                              <lb/>pas une montagne couverte d’oliviers millénaires, 
+                              <lb/>et &je; conseillai de marcher un peu. On accepta 
+                              <lb/>avec empressement ; mais, au bout de quelques 
+                              <lb/>pas, <persName ref="#ladyHarriet">lady Harriet</persName>, essoufflée et replète, remonta 
+                              <lb/>envoiture. &Lord-B; resta sur le siège, <rs ref="#cocher">le co&lb;cher</rs> mit pied à terre, et <persName ref="#Medora">miss Médora</persName>, qui s’était 
+                              <lb/>traînée d’un air dolent, prit sa course comme si 
+                              <lb/><rs ref="#Medora">elle</rs> eût été piquée de la tarentule, et s’élança, 
+                              <lb/>légère, forte et gracieuse, sur le chemin rapide
+                              <lb/>et sinueux. 
+                              <lb/><said who="#cocher" aloud="true" toWhom="#jeanValreg">— Une belle femme !</said> dit naïvement <persName ref="#cocher">le cocher</persName> ; avec cet abandon propre aux Italiens de toutes les 
+                              <lb/>classes, en se tournant vers moi d’un air tout fra&lb;ternel. <said who="#cocher" aloud="true" toWhom="#jeanValreg"><rs ref="#jeanValreg">J'</rs>en fais mon compliment, à votre excel&lb;lence.</said>
+                              <lb/><said who="#jeanValreg" aloud="true" toWhom="#cocher">— <rs ref="#cocher">Vous</rs> vous trompez, mon ami,</said> lui dis-&je;. 
+                              <lb/><said who="#jeanValreg" aloud="true"><rs ref="#Medora">Cette belle femme</rs> est une demoiselle, et je n’ai 
+                              <lb/>aucun lien avec <rs ref="#Medora">elle</rs>. </said>
+                              <lb/><said who="#jeanValreg" aloud="true" toWhom="#jeanValreg">— <rs ref="#cocher">Je</rs> sais bien !</said> reprit-<rs ref="#cocher">il</rs> tranquillement en 
+                              <lb/><rs ref="#jeanValreg">m’</rs>ôtant sans façon mon cigare de la bouche pour 
+                              <lb/>allumer le sien. <said who="#cocher" aloud="true" toWhom="#jeanValreg"><rs ref="#cocher">Je</rs> suis au service de <rs ref="#Medora #ladyHarriet #lordB">ces Anglais</rs>
+                              <lb/>pour la saison ; mais on sait bien, dans la maison 
+                              <lb/>et dans &Rome;, que <rs ref="#jeanValreg">vous</rs> épousez <rs ref="#Medora">la belle Anglaise.</rs></said>
+                              <lb/><said who="#jeanValreg" aloud="true" toWhom="#cocher">— Eh bien, <rs ref="#cocher">mon cher</rs>, <rs ref="#jeanValreg">vous</rs> direz, s’il-vous&lb; plaît, dans la maison et dans &Rome;,que ce que 
+                              <lb/>vous croyez là est un mensonge et une stupidité.</said>
+                        </p>
+
+                        <p>
+                              <cb n="7" facs="#c7" prev="#c6" next="#c8"/>
+                              <lb/>&Je; doublai le pas, peu curieux de constater l’ef&lb;fet des bavardages insensés de <persName ref="#daniella">la Daniella</persName> on du
+                              <lb/><persName ref="#tartaglia">Tartaglia</persName>, <rs ref="#tartaglia">son compère</rs>, et, fort ennuyé du rôle
+                              <lb/>absurde que ces valets voulaient <rs ref="#jeanValreg">m'</rs>attribuer, je 
+                              <lb/>fis un effort pour n’y plus songer en marchant. 
+                        </p>
+
+                        <p>
+                              <lb/>Cette préoccupation venait mal à propos <rs ref="#jeanValreg">m'</rs>ar&lb;racher au charme qui s’emparait de <rs ref="#jeanValreg">moi</rs> dans 
+                              <lb/>cette région vraiment
+                              admirable. La montagne 
+                              <lb/>était jonchée d’herbe d’un vert éclatant, et les 
+                              <lb/>antiques oliviers adoucissaient leurs formes fan&lb;tastiques et la torsion insensée de leurs tiges, <lb/>sous des robes de mousses veloutées d’une ado&lb;rable fraîcheur. L’olivier est un vilain arbre tant 
+                              <lb/>qu’il n’est pas arrivé à cet aspect de décrépitude 
+                              <lb/>colossale qu’il conserve pendant plusieurs siècles 
+                              <lb/>sans cesser d’être productif. En <placeName ref="#provence">Provence</placeName>, il est
+                              <lb/>grêle et n’offre qu’une boule de feuillage blan&lb;châtre qui rampe sur les champs comme des flo&lb;cons de brume. Ici, il atteint des proportions é&lb;normes et donne un ombrage clair qui tamise le 
+                              <lb/>soleil en pluie d’or sur son branchage échevelé.
+                              <lb/>Son tronc, crevassé, finit par éclater en huit ou 
+                              <lb/>dix segm&ens; monstrueux, auteur desquels les re&lb;jets plus jeunes s’enroulent comme des boas pris 
+                              <lb/>de fureur. 
+                        </p>
+
+                        <p>
+                              <lb/>Cette forêt de <placeName ref="#tivoli">Tivoli</placeName> fait penser à la <placeName ref="#foretTasse">forêt en&lb;chantée du Tasse</placeName>. On ne sait pas bien si ces ar&lb;bres ne sont pas des monstres qui vont se mou&lb;voir et rugir ou parler. Mais, pas plus que dans 
+                              <lb/>le génie tout italien du poète, il n’y a, dans cette
+                              <lb/>nature, de terreurs réelles. La verdure est trop 
+                              <lb/>belle, et les profondeurs bleuâtres que l’on aper&lb;çoit à travers ces entrelacements infinis sont d’un 
+                              <lb/>ton trop doux pour que l’imagination s’y assom&lb;brisse. Comme dans les
+                              aventures de la <placeName ref="#Jerusalem" rend="italic">Jérusalem</placeName>, 
+                              <lb/>on sent toujours la main des fées prête à changer 
+                              <lb/>les dragons de feu en guirlandes de fleurs, et les 
+                              <lb/>buissons d’épines en nymphes décevantes. 
+                        </p>
+
+                        <p>
+                              <lb/>&j;en étais là de ma rêverie, lorsque la belle 
+                              <lb/>&Medora;, qui avait pris les dev&ans;, et que &j;a&lb;vais oubliée, <rs ref="#jeanValreg">m'</rs>apparut tout à coup à un dé&lb;tour de la montée, sortant d’un de ces fan&lb;tastiques oliviers creux où <rs ref="#Medora">elle</rs> s’était amusée 
+                              <lb/>à se cacher. &Je; tressaillis de surprise, et <rs ref="#Medora">elle</rs>
+                              <lb/>s’élança vers <rs ref="#jeanValreg">moi</rs>, aussi gaie, aussi rieuse que 
+                              <lb/>si <rs ref="#Medora">elle</rs> n’eût jamais eu de vapeurs. <rs ref="#Medora">Elle</rs> était 
+                              <lb/>vraiment plus belle que &je; ne lui avais encore ac&lb;cordé de l’être. Un trop grand soin, que <rs ref="#jeanValreg">je</rs> ne peux
+
+                              <cb n="8" facs="#c8" prev="#c7" next="#c9"/>
+
+                              <lb/><rs ref="#jeanValreg">m'</rs>empêcher d’attribuer à un trop grand amour de 
+                              <lb/>sa personne, <rs ref="#jeanValreg">me</rs> la gâte presque toujours. <rs ref="#Medora">Elle</rs>
+                              <lb/>est toujours trop bien habillée, trop bien coiffée, 
+                              <lb/>et d’un ton trop reposé, trop inaltérable. C’est 
+                              <lb/>une beauté de nacre et d’ivoire, qui change sans 
+                              <lb/>cesse de robes, de bijoux et de rubans sans que 
+                              <lb/>sa physionomie change jamais ; et c’est de bonne
+                              <lb/>foi, &je; vous assure, que <rs ref="#jeanValreg">j'</rs>ai dit souvent à <persName ref="#Brumieres">Bru&lb;mières</persName> que cette invariable perfection m’était in&lb;supportable. 
+                        </p>
+
+                        <p>
+                              <lb/>En ce moment, <rs ref="#Medora">elle</rs> était toute différente de sa 
+                              <lb/>manière d’être habituelle. Les larmes avaient un 
+                              <lb/>peu creusé ses beaux yeux, et ses joues, animées 
+                              <lb/>par la course, étaient d’un ton moins pur et plus 
+                              <lb/>chaud que de coutume. Il y avait enfin de la vie 
+                              <lb/>et comme de la moiteur sur sa peau et dans son 
+                              <lb/>regard. <rs ref="#Medora">Elle</rs> avait perdu son peigne en courant. 
+                              <lb/>&j;ignore si <rs ref="#Medora">elle</rs> avait mis sa fausse tresse dans sa 
+                              <lb/>poche ; mais <rs ref="#Medora">elle</rs> avait encore une assez belle
+                              <lb/>chevelure pour se passer d’artifice et pour enca&lb;drer magnifiquement sa tête. Ce n’était plus cet
+                              <lb/>inflexible diadème lissé comme du marbre noir 
+                              <lb/>sur un front de marbre blanc. C’était une auréole 
+                              <lb/>de vrais cheveux, souples et fins, voltigeant sur 
+                              <lb/>une chair rosé frémissante. 
+                        </p>
+
+                        <p>
+                              <lb/>Probablement <rs ref="#Medora">elle</rs> vit dans mon regard que &je;
+                              <lb/>lui faisais amende honorable, car <rs ref="#Medora">elle</rs> vint à <rs ref="#">moi</rs>
+                              <lb/>amicalement et passa son bras sous le mien avec 
+                              <lb/>une familiarité bien différente de ses dédains ac&lb;coutumés, en me demandant à quoi je pensais 
+                              <lb/>et pourquoi j’avais eu l’air si surpris en la 
+                              <lb/>voyant sortir de son arbre. 
+                        </p>
+
+                        <p>
+                              <lb/>&Je; lui racontai comme quoi la <placeName ref="#foretTasse">forêt du Tasse</placeName>
+                              <lb/>s’était présentée à mon imagination, et comment 
+                              <lb/>son apparition, à <rs ref="#Medora">elle</rs>, avait coïncidé avec le sou&lb;venir de ces enchantements bénévoles.
+                              <lb/><said who="#Medora" aloud="true" toWhom="#jeanValreg">— C’est-à-dire que <rs ref="#jeanValreg">vous</rs> <rs ref="#Medora">m’</rs>avez comparée tout 
+                              <lb/>bonnement à une sorcière ! Il ne faut pas que <rs ref="#Medora">je m’</rs>
+                              <lb/>en plaigne, puisque décidément il faut avoir 
+                              <lb/>cet air-là pour <rs ref="#jeanValreg">vous</rs> plaire.</said>
+                              <lb/><said who="#jeanValreg" aloud="true" toWhom="#Medora">— Où prenez-<rs ref="#Medora">vous</rs> cette singulière assertion 
+                              <lb/>sur mon compte ?</said>
+                              <lb/><said who="#Medora" aloud="true" toWhom="#jeanValreg">— Dans votre enthousiasme pour la vivandière 
+                              <lb/>de <placeName ref="#AguaArgentina" rend="italic">l’Agua argentina</placeName>. La seule créature de mon 
+                              <lb/>sexe qui <rs ref="#jeanValreg">vous</rs> ait ému depuis votre arrivée à <placeName ref="#rome">Ro&lb;me</placeName>,a été qualifiée par <rs ref="#jeanValreg">vous</rs> de sibylle.</said>
+                              <lb/><said who="#jeanValreg" aloud="true" toWhom="#Medora">— Alors, <rs ref="#jeanValreg">vous</rs> pensez que <rs ref="#jeanValreg">je</rs> cherche à établir 
+
+                              <cb n="9" facs="#c9" prev="#c8" next="#c10"/>
+
+                              <lb/>une comparaison, sur le terrain de la magie, en&lb;tre <rs ref="#Medora">vous</rs> et un pauvre septuagénaire ?</said>
+                              <lb/><said who="#Medora" aloud="true" toWhom="#jeanValreg">— Que dites-<rs ref="#jeanValreg">vous</rs> là ?</said> s’écria-t-<rs ref="#Medora">elle</rs> en raidis&lb;sant ses doigts effilés sur mon bras ; <said who="#Medora" aloud="true">c’était une 
+                              <lb/>femme de soixante et dix ans ?</said>
+                              <lb/><said who="#jeanValreg" aloud="true" toWhom="#Medora">— Tout au moins ! Ne l’ai-&je; pas dit, en faisant 
+                              <lb/>la description de ses <hi rend="italic">charmes</hi> ?</said>
+                              <lb/><said who="#Medora" aloud="true" toWhom="#jeanValreg">— <rs ref="#jeanValreg">Vous</rs> ne l’avez pas dit. Pourquoi ne l’avez&lb;<rs ref="#jeanValreg">vous</rs> pas dit ?</said>
+                        </p>
+
+                        <p>
+                              <lb/>Cette brusque interrogation, faite d’un ton de 
+                              <lb/>reproche, <rs ref="#jeanValreg">me</rs> laissa stupéfait au point de ne sa&lb;voir quoi répondre. <rs ref="#Medora">Elle</rs> m’en épargna le soin 
+                              <lb/>en ajoutant : 
+                              <lb/><said who="#Medora" aloud="true" toWhom="#jeanValreg">— Et la <persName ref="#daniella">Daniella</persName> ? Que dites-<rs ref="#jeanValreg">vous</rs> de la Daniel &lb;la ? N’a-t-elle pas aussi un petit air de sorcière ?</said>
+                              <lb/><said who="#jeanValreg" aloud="true" toWhom="#Medora">— Je <!--Petit oubli de balisage ?--> ne m’en suis jamais avisé,</said> répondis-<rs ref="#jeanValreg">je</rs> ; 
+                              <lb/><said who="#jeanValreg" aloud="true" toWhom="#Medora">et, en tout cas, &je; n’y tiendrais pas essentielle&lb;ment pour la trouver jolie.</said>
+                              <lb/><said who="#Medora" aloud="true" toWhom="#jeanValreg">— Ah ! vous convenez que celle-ci <rs ref="#jeanValreg">vous</rs> plaît ? 
+                              <lb/><rs ref="#Medora">Je</rs> le disais bien, il faut être laide pour <rs ref="#jeanValreg">vous</rs>
+                              <lb/>plaire !</said>
+                              <lb/><said who="#jeanValreg" aloud="true" toWhom="#Medora">— Selon <rs ref="#Medora">vous</rs>, la <persName ref="#daniella">Daniella</persName> est donc laide ?</said>
+                              <lb/><said who="#Medora" aloud="true" toWhom="#jeanValreg">— Affreuse !</said> répondit-<rs ref="#Medora">elle</rs> avec une candeur de 
+                              <lb/>souveraine jalouse du moindre objet supporta&lb;ble sur les terres de son royaume. 
+                              <lb/><said who="#jeanValreg" aloud="true" toWhom="#Medora">— Allons, <rs ref="#Medora">vous</rs> êtes trop despote,</said> lui dis-&je; en 
+                              <lb/>riant. <said who="#jeanValreg" aloud="true" toWhom="#Medora"><rs ref="#Medora">Vous</rs> voulez qu’à moins de trouver une
+                              <lb/>beauté supérieure à la vôtre, on ne daigne pas
+                              <lb/>seulement ouvrir les yeux. Alors, il faut se les
+                              <lb/>crever pour jamais, et renoncer à la peinture.</said>
+                              <lb/><said who="#Medora" aloud="true" toWhom="#jeanValreg">— Est-ce un compliment ?</said> demanda-t-<rs ref="#Medora">elle</rs> avec
+                              <lb/>une animation extraordinaire : <said who="#Medora" aloud="true" toWhom="#jeanValreg">un compliment é&lb;quivaut à une raillerie, par conséquent à une in&lb;jure.</said>
+                              <lb/><said who="#jeanValreg" aloud="true" toWhom="#Medora">— <rs ref="#Medora">Vous</rs> avez raison ; aussi n’est-ce pas un com&lb;pliment, mais une vérité banale que j’aurais dû 
+                              <lb/>ne pas formuler, car <rs ref="#Medora">vous</rs> devez être lasse de 
+                              <lb/>l’entendre.</said>
+                              <lb/><said who="#Medora" aloud="true" toWhom="#jeanValreg">— <rs ref="#jeanValreg">Vous</rs> ne m’avez pas gâtée sous ce rapport, 
+                              <lb/><rs ref="#jeanValreg">vous</rs> ! Dites donc toute votre pensée ! <rs ref="#jeanValreg">Vous</rs> savez 
+                              <lb/>que <rs ref="#Medora">je</rs> ne suis pas laide ; mais vous n’aimez pas 
+                              <lb/>ma figure.</said>
+                              <lb/><said who="#jeanValreg" aloud="true" toWhom="#Medora">— <rs ref="#jeanValreg">Je</rs> crois que <rs ref="#jeanValreg">je</rs> l’aimerais autant que <rs ref="#jeanValreg">je</rs> l’ad&lb;mire, si elle était toujours naïvement belle com&lb;me elle l’est dans ce moment-ci.</said>
+                        </p>
+
+                        <p>
+                              <lb/>Pressé de questions à cet égard, &je; fus en&lb;traîné à lui dire que, selon <rs ref="#jeanValreg">moi</rs>, <rs ref="#Medora">elle</rs> était ordi&lb;nairement trop arrangée, trop encadrée, trop re
+
+                              <cb n="10" facs="#c10" prev="#c9" next="#c11"/>
+                              &lb;haussée, et qu’au lieu de ressembler à <rs ref="#Medora">elle-mê&lb;me</rs>, c’est-à-dire à une femme superbe et ravis&lb;sante, <rs ref="#Medora">elle</rs> se condamnait à un travail perpétuel
+                              <lb/>pour ressembler à n’importe quelle femme pim&lb;pante, à n’importe quel type de fashion aristo&lb;cratique, à n’importe quelle poupée servant de 
+                              <lb/>montre à un étalage de chiffons et de bijoux. 
+                              <lb/><said who="#Medora" aloud="true" toWhom="#jeanValreg">— Je crois que vous avez raison,</said> répondit-<rs ref="#Medora">elle</rs>
+                              <lb/>après un moment de silence attentif. Et, arra&lb;chant tout à coup sa broche et ses bracelets de 
+                              <lb/><persName ref="#FromentMeurice">Froment-Meurice</persName>, véritables objets d’art que 
+                              <lb/>précisément je n’étais nullement disposé à criti&lb;quer, <rs ref="#Medora">elle</rs> les lança à travers le bois avec une 
+                              <lb/>gaieté de <persName ref="#Sardanapale">Sardanapale.</persName>
+                              <lb/><said who="#jeanValreg" aloud="true" toWhom="#Medora">— Voilà un étonnant coup de tête !</said> lui dis-<rs ref="#jeanValreg">je</rs> en 
+                              <lb/>quittant son bras sans galanterie pour aller ra&lb;masser ces précieux objets. <said who="#jeanValreg" aloud="true" toWhom="#Medora"><rs ref="#Medora">Vous</rs> permettrez 
+                              <lb/>qu’en qualité d’artiste, &je; <rs ref="#Medora">vous</rs> reproche ce mé&lb;pris pour de si beaux ouvrages.</said>
+                        </p>
+
+                        <p>
+                              <lb/>&Je; retrouvai les bijoux, non sans peine, et 
+                              <lb/>quand &je; les lui rapportai :
+                              <lb/><said who="#Medora" aloud="true" toWhom="#jeanValreg">— gardez-les,</said> me dit-<rs ref="#Medora">elle</rs> avec colère : <said who="#Medora" aloud="true" toWhom="#jeanValreg"><rs ref="#Medora">je</rs> n’en 
+                              <lb/>veux plus.</said>
+                              <lb/><said who="#jeanValreg" aloud="true" toWhom="#Medora">— Et pour qui diable les garderais-&je; ?</said>
+                              <lb/><said who="#Medora" aloud="true" toWhom="#jeanValreg">— Pour qui <rs ref="#jeanValreg">vous</rs> voudrez ; pour la <persName ref="#daniella">Daniella</persName> ! 
+                              <lb/>quand <rs ref="#daniella">elle</rs> sera ornée et parée, <rs ref="#daniella">elle</rs> commencera 
+                              <lb/>à <rs ref="#jeanValreg">vous</rs> déplaire autant que <rs ref="#Medora">moi</rs>.</said>
+                              <lb/><said who="#jeanValreg" aloud="true" toWhom="#Medora">— <rs ref="#jeanValreg">Je</rs> les lui remettrai ce soir, pour qu’<rs ref="#daniella">elle</rs> les 
+                              <lb/>replace dans votre écrin,</said> répondis-&je;, en mettant 
+                              <lb/>les bijoux dans ma poche. 
+                              <lb/><said who="#Medora" aloud="true" toWhom="#jeanValreg">— Ah ! <rs ref="#jeanValreg">vous</rs> êtes cruel ! <rs ref="#jeanValreg">Vous</rs> n’avez pas une 
+                              <lb/>réponse qui ne soit de glace ! »</said> Et, me quittant 
+                              <lb/>brusquement, <rs ref="#Medora">elle</rs> reprit sa course en avant de la 
+                              <lb/>voiture, <rs ref="#jeanValreg">me</rs> laissant là assez stupidement ébahi 
+                              <lb/>de sa véhémence. 
+                        </p>
+
+                        <p>
+                              <lb/>Que se passait-il donc dans cette étrange cer&lb;velle de <rs ref="#Medora">jeune fille</rs> ? Voilà le problème que &je; ne 
+                              <lb/>pouvais, que <rs ref="#jeanValreg">je</rs> ne peux pas encore résoudre.
+                              <lb/>Quand la voiture <rs ref="#Medora">la</rs> rejoignit, <rs ref="#Medora">elle</rs> était calme et 
+                              <lb/>enjouée. Ses émotions s’apaisent vite. Elles vien&lb;nent et s’envont comme des mouches qui volent. 
+                        </p>
+
+                        <signed>
+                              <lb/><persName ref="#GS">GEORGE SAND.</persName>
+                              <lb/>(La suite à <date when="1857-01-22">demain</date>.)
+                        </signed>
+                  </div1>
+
+
+                  <div1 n="2" type="chapter" facs="#Daniella22.01">
+
+                        <pb n="3"/>
+                        <cb n="11" facs="#c11" prev="#c10" next="#c12"/>
+
+                        <head>
+                              FEUILLETON DE LA PRESSE Du 
+                              <date when="1857-01-22">jeudi soir 22 janvier 1857</date>. 
+                              <title>La Daniella.</title> XIV.
+                        </head>
+
+                        <p>
+                              <placeName ref="#frascati">Frascati</placeName>, 
+                              <date when="--04-01">1er avril.</date> 
+                              (Suite.) 
+                        </p>
+
+                        <p>
+                              <lb/><placeName ref="#tivoli">Tivoli</placeName> est une ville charmante au point de vue 
+                              <lb/>pittoresque ; mais la fièvre et la misère ou l’incu&lb;rie, règnent là comme à &Rome;. La population é&lb;tait cependant en grande activité pour rentrer les 
+                              <lb/>olives dont la récolte, tardive dans cette région
+                              <lb/>fraîche, vient de s’achever. Hommes, femmes et 
+                              <lb/>enfants offraient, comme à &Rome;, une exhibition 
+                              <lb/>de guenilles à nulle autre pareille ; à ce point que
+                              <lb/>l’on ne sait plus si c’est la détresse ou le goût du 
+                              <lb/>haillon qui généralisent ainsi cette livrée repous&lb;sante. Aux jours de fête, les femmes de la cam&lb;pagne romaine sont pourtant d’un luxe exorbi&lb;tant. chaque localité a son costume tout chamarré 
+                              <lb/>d’or et de pourpre, les robes et les tabliers de 
+                              <lb/>damas de soie, les chaînes et les boucles d’oreil&lb;les d’un grand prix. Cela
+                              n’empêche pas qu’on 
+                              &reproduction-interdite;
+                              <cb n="12" facs="#c12" prev="#c11" next="#c13"/>
+
+                              <lb/>ne soit hideusement sale dans la semaine et qu’on 
+                              <lb/>ne tende la main aux pass&ans;. 
+                        </p>
+
+                        <p>
+                              <lb/>Vous avez le dessin du joli petit temple de la 
+                              <lb/>Sibylle, perché sur le sommet d’un abîme ; mais 
+                              <lb/>cela ne vous donne pas la moindre idée de cet 
+                              <lb/>abîme, où &je; vous ferai descendre tout à l’heure. 
+                        </p>
+
+                        <p>
+                              <lb/>&Lord-B; avait envoyé <persName ref="#tartaglia"/>Tartaglia, la veille, <!--Erreur d'encodage du persName ?-->
+                              <lb/>en éclaireur, pour commander notre déjeuner. 
+                              <lb/><rs ref="#jeanValreg #lordB #ladyHarriet #Medora">Nous</rs> trouvâmes la table dressée sur une terrasse 
+                              <lb/>escarpée, au pied du temple même, et en face de 
+                              <lb/>l’effrayant rocher dont le sommet fut le principal 
+                              <lb/>couronnement des grottes de Neptune. Le cou&lb;ronnement s’est écroulé, il y a quelques années ;
+                              <lb/>l’<hi rend="italic">Anio</hi> a été détourné en partie pour passer sous 
+                              <lb/>des tunnels à quelque distance de là, et former
+                              <lb/>la grande cascade. Mais ce qui est resté des eaux 
+                              <lb/>du fleuve pour alimenter le torrent du gouffre na&lb;turel, est encore splendide, et les monstrueux 
+                              <lb/>débris de la principale grotte, gisant au pied du 
+                              <lb/>roc, ont donné un autre genre de beauté à la 
+                              <lb/>scène que <rs ref="#jeanValreg #lordB #ladyHarriet #Medora">nous</rs> dominions. D’ailleurs, grâce aux 
+                              <lb/>pluies de ces derniers jours, le rocher de Nep&lb;tune était arrosé d’une fine cataracte qui tombait 
+                              <lb/>en nappe d’argent sur sa brisure à pic. 
+                        </p>
+
+                        <p>
+                              <lb/><rs ref="#jeanValreg #lordB #ladyHarriet #Medora">Nous</rs> ne pouvions voir, sous l’abondante vé&lb;gétation qui remplit le gouffre, l’autre bras du 
+                              <lb/>torrent qui forme d’autres chutes plus impor&lb;tantes vers le fond de cet entonnoir. <rs ref="#jeanValreg #lordB #ladyHarriet #Medora">Nous</rs> en en&lb;tendions le bruit formidable, ainsi que celui de 
+                              <lb/>la grande cataracte du tunnel, placée derrière
+                              <lb/>d’autres masses de rochers. Toutes ces voix de 
+                              <lb/>l’abîme, mugissant sous des arbres dont nous res&lb;pirions les cimes fleuries, avaient un charme ex&lb;traordinaire.
+                        </p>
+
+                        <p>
+                              <lb/>Le déjeuner fut excellent, grâce à la prévoyan&lb;ce de &Lord-B; et aux soins de <persName ref="#tartaglia">Tartaglia</persName>, qui 
+
+                              <cb n="13" facs="#c13" prev="#c12" next="#c14"/>
+
+                              <lb/>s’entend à la cuisine comme à toutes choses. 
+                              <lb/>&Lord-B; fut aussi enjoué que <rs ref="#lordB">sa</rs> nature le com&lb;porte. <rs ref="#lordB">Il</rs> déteste le séjour des villes, celui de
+                              <lb/>&Rome; en particulier. <rs ref="#lordB">Il</rs> aime les lieux sauvages, 
+                              <lb/>les grandes scènes de la nature. Un peu excité 
+                              <lb/>par une pointe de vin d’<placeName ref="#asti">Asti</placeName>, boisson agréable et
+                              <lb/>capiteuse dont je sentis bientôt qu’il fallait se mé&lb;fier, <rs ref="#lordB">il</rs> parla des ouvrages de Dieu avec une sorte 
+                              <lb/>de poésie d’autant plus remarquable chez <rs ref="#lordB">lui</rs>, 
+                              <lb/>qu’elle s’appuyait sur le large fond de bon sens 
+                              <lb/>qui fait la base de son caractère. <rs ref="#ladyHarriet">Sa femme</rs> était, 
+                              <lb/>comme de coutume, disposée à dénigrer ce rare 
+                              <lb/>moment d’expansion. &J;eus le bonheur de l’en 
+                              <lb/>empêcher en écoutant &Lord-B; avec intérêt, et
+                              <lb/>en l’aidant à développer ses pensées, lorsque sa 
+                              <lb/>timidité naturelle ou son découragement de <rs ref="#lordB">lui&lb;même</rs> tendaient à les laisser obscures et incom&lb;plètes. <rs ref="#lordB">Il</rs> arriva ainsi à dire d’excellentes choses, 
+                              <lb/>très-senties et empreintes d’une certaine origina&lb;lité. &Medora;, beaucoup plus intelligente que sa 
+                              <lb/><rs ref="#ladyHarriet">tante</rs>, en fut peu à peu frappée, et, regardant al&lb;ternativement <rs ref="#lordB">lui</rs> et <rs ref="#jeanValreg">moi</rs> avec quelque surprise, 
+                              <lb/><rs ref="#Medora">elle</rs> arriva à daigner causer
+                              avec ce pauvre <rs ref="#lordB">oncle</rs>
+                              <lb/>comme avec un être de quelque valeur. Cette es&lb;pèce d’adhésion gagna insensiblement <persName ref="#ladyHarriet">lady Har&lb;riet</persName>, qui cessa de sauter comme une carpe à 
+                              <lb/>chaque parole de son <rs ref="#lordB">mari</rs>, et qui voulut bien, 
+                              <lb/>par deux ou trois fois, dire en <rs ref="#lordB">l’</rs>écoutant : <said who="#ladyHarriet" aloud="true" toWhom="#lordB"><hi rend="italic">Juste,      
+                              <lb/>extrêmement juste !</hi></said>
+                        </p>
+
+                        <p>
+                              <lb/>Quand on <rs ref="#lordB #ladyHarriet #Medora #jeanValreg">nous</rs> eut servi le café, <rs ref="#Medora #ladyHarriet">les femmes</rs> se 
+                              <lb/>levèrent pour mettre leur manteau, car le ciel 
+                              <lb/>s’était couvert et le froid se faisait sentir. <persName ref="#lordB">Lord 
+                              <lb/>B***</persName> les retint. <said who="#lordB" aloud="true">— Attendez encore un peu,</said> leur
+                              <lb/>dit-<rs ref="#lordB">il</rs>. <said who="#lordB" aloud="true">Prenez un verre de bordeaux et trinquez 
+                              <lb/>avec <rs ref="#lordB">moi</rs>, à la française.</said>
+                        </p>
+
+                        <p>
+                              <lb/>Cette proposition révolta <rs ref="#ladyHarriet">sa femme</rs>, mais <persName ref="#medora">Mé&lb;dora</persName>, qui a beaucoup d’ascendant sur <rs ref="#ladyHarriet">elle</rs>, prit
+
+                              <cb n="14" facs="#c14" prev="#c13" next="#c15"/>
+
+                              <lb/>un verre, et, après y avoir mouillé ses lèvres, de&lb;manda quelle santé son <rs ref="#lordB">oncle</rs> voulait porter. <said who="#lordB" aloud="true" toWhom="#lordB #ladyHarriet #Medora #jeanValreg">— 
+                              <lb/>Buvons à l’amitié,</said> répondit-<rs ref="#lordB">il</rs> avec une émotion 
+                              <lb/>concentrée. <said who="#lordB" aloud="true" toWhom="#ladyHarriet"><persName ref="#ladyHarriet">Lady Harriet</persName>, faites-moi la grâce de 
+                              <lb/>boire à l’amitié !</said>
+                              <lb/><said who="#ladyHarriet" aloud="true" toWhom="#lordB">— À quelle amitié ?</said> dit-<rs ref="#ladyHarriet">elle</rs> ; <said who="#ladyHarriet" aloud="true" toWhom="#lordB">à celle que <rs ref="#lordB #ladyHarriet">nous</rs>
+                              <lb/>avons pour <persName ref="#jeanValreg">M. Jean Valreg</persName>, notre sauveur ? À l’a&lb;mitié et à la reconnaissance ! Je ne demande pas 
+                              <lb/>mieux !</said>
+                              <lb/><said who="#lordB" aloud="true" toWhom="#ladyHarriet">— Non,non,</said> reprit &Lord-B;,<said who="#lordB" aloud="true"><persName ref="#jeanValreg">Valreg</persName> n’a pas 
+                              <lb/>besoin de témoignages particuliers, et ce que <rs ref="#lordB">je</rs>
+                              <lb/><rs ref="#ladyHarriet">vous</rs> propose a un sens général. </said>
+                              <lb/><said who="#Medora" aloud="true" toWhom="#lordB">— Expliquez-<rs ref="#lordB">vous</rs>,</said> dit <persName ref="#Medora">Médora</persName>. <said who="#Medora" aloud="true" toWhom="#lordB">Je <!--Oubli de balisage ?--> suis sûre que 
+                              <lb/><rs ref="#lordB">vous</rs> allez vous expliquer très-bien. </said>
+                              <lb/><said who="#lordB" aloud="true" toWhom="#ladyHarriet #Medora #jeanValreg">— <rs ref="#lordB">Je</rs> bois,</said> dit-<rs ref="#lordB">il</rs> en élevant son verre, <said who="#lordB" aloud="true" toWhom="#ladyHarriet #Medora #jeanValreg">à cette 
+                              <lb/>pauvre bonne personne de Déesse, veuve de 
+                              <lb/>messer <persName ref="#Cup">Cupidon,</persName> laquelle demeure au fond du
+                              <lb/>carquois épuisé de flèches, comme <persName ref="#Pandore">Pandore</persName> au 
+                              <lb/>fond de la boite des afflictions et des malices. 
+                              <lb/>C’est une indigente que les jeunes gens mépri&lb;sent parce qu’elle est vieillotte et modeste ; mais 
+                              <lb/>nous, <rs ref="#ladyHarriet">mylady</rs>…</said>
+                        </p>
+
+                        <p>
+                              <lb/>&je; vis qu’<rs ref="#lordB">il</rs> allait gâter son exorde par quelque 
+                              <lb/>maladroite allusion à la beauté automnale de sa 
+                              <lb/><rs ref="#ladyHarriet">femme</rs>, et <rs ref="#jeanValreg">je</rs> profitai d’un de ces points d’orgue
+                              <lb/>spasmodiques, moitié soupir, moitié bâillement, 
+                              <lb/>dont <rs ref="#lordB">il</rs> parsème ses périodes, pour couvrir sa
+                              <lb/>conclusion sous un robuste applaudissement. 
+                              <lb/>Puis <rs ref="#jeanValreg">j’</rs>ajoutai, avec une profondeur d’habileté
+                              <lb/>dont &je; fus étonné <rs ref="#jeanValreg">moi-même</rs> : <said who="#jeanValreg" aloud="true" toWhom="#lordB">— Bravo ! <persName ref="#lordB">mylord</persName>, 
+                                    <lb/>ceci est tout à fait dans le goût de <persName ref="#Shakespeare">Shakespeare</persName>, 
+                              <lb/>que <rs ref="#lordB">vous</rs> affectez de ne pas comprendre, et que 
+                              <lb/><rs ref="#lordB">vous</rs> pourriez commenter aussi bien que <persName ref="#malone">Malone</persName>
+                              <lb/>ou… <rs ref="#ladyHarriet">mylady</rs> !</said>
+                              <lb/><said who="#ladyHarriet" aloud="true" toWhom="#jeanValreg">— Serait-il vrai ?</said> dit <persName ref="#ladyHarriet">lady Harriet</persName> surprise et 
+                              <lb/>flattée. <said who="#ladyHarriet" aloud="true" toWhom="#jeanValreg">En effet,je crois quelquefois que l’igno
+
+                              <cb n="15" facs="#c15" prev="#c14" next="#c16"/>
+                              &lb;rance de <rs ref="#lordB">mylord</rs> est une affectation, et qu’il a 
+                              <lb/>plus de goût et de sensibilité qu’<rs ref="#lordB">il</rs> n’en veut a&lb;vouer.</said>
+                        </p>
+
+                        <p>
+                              <lb/>C’était sans doute la première parole un peu 
+                              <lb/>aimable que <persName ref="#ladyHarriet">lady Harriet</persName> disait à <rs ref="#lordB">son mari</rs> de&lb;puis bien longtemps. <rs ref="#lordB">Le pauvre homme</rs> fit un 
+                              <lb/>mouvement comme pour lui prendre la main ; 
+                              <lb/>mais, arrêté par une habitude de doute et de 
+                              <lb/>crainte, ce fut ma main qu’<rs ref="#lordB">il</rs> prit dans la sienne, 
+                              <lb/>et c’est à <rs ref="#jeanValreg">moi</rs> que le remercîment fut adressé. 
+                              <lb/><said who="#lordB" aloud="true" toWhom="#jeanValreg">— <persName ref="#jeanValreg">Valreg</persName>,</said> dit-<rs ref="#lordB">il</rs>
+                              <said who="#lordB" aloud="true" toWhom="#jeanValreg">écoutez-<rs ref="#lordB">moi</rs> et devinez-<rs ref="#lordB">moi</rs> ! 
+                              <lb/>Voilà vingt ans que <rs ref="#lordB">je</rs> n’ai fait un repas aussi a&lb;gréable.</said>
+                              <lb/><said who="#ladyHarriet" aloud="true" toWhom="#lordB">— C’est vrai,</said> dit <rs ref="#ladyHarriet">mylady</rs> ; <said who="#ladyHarriet" aloud="true" toWhom="#lordB">depuis ce déjeuner 
+                              <lb/>sur la mer de glace, à <placeName ref="#chamounix">Chamounix</placeName>, avec… avec 
+                              <lb/>qui donc ? <rs ref="#ladyHarriet">Je</rs> ne me rappelle pas…</said>
+                              <lb/><said who="#lordB" aloud="true" toWhom="#ladyHarriet">— Avec personne,</said> répliqua <persName ref="#lordB">lord B***</persName>. <said who="#lordB" aloud="true">Nos 
+                              <lb/>guides s’étaient éloignés, et <rs ref="#ladyHarriet">vous</rs> me fîtes la 
+                              <lb/>grace de boire avec <rs ref="#lordB">moi</rs>, comme aujourd’hui… à 
+                              <lb/>l’amitié !</said>
+                        </p>
+
+
+                        <p>
+                              <lb/>Une vive rougeur avait monté au front de <persName ref="#ladyHarriet">lady 
+                              <lb/>Harriet</persName>. Un instant, <rs ref="#ladyHarriet">elle</rs> avait craint l’évocation 
+                              <lb/>de quelque tendre souvenir, imprudemment é&lb;veillé par <rs ref="#ladyHarriet">elle</rs>. Il est aisé de voir qu’outre le plus 
+                              <lb/>léger froissement de sa pudeur britannique, rien 
+                              <lb/>ne lui est plus désagréable que les imperceptibles 
+                              <lb/>fatuités rétrospectives de son <rs ref="#lordB">mari</rs> à son égard. 
+                              <lb/><rs ref="#ladyHarriet">Elle</rs> lui sut donc un gré infini de s’être arrêté à 
+                              <lb/>temps dans sa commémoration de tête-à-tête de
+                              <lb/><placeName ref="#chamounix">Chamounix</placeName>.
+                              <lb/><said who="#Medora" aloud="true" toWhom="#jeanValreg">— n’est-il pas très-plaisant,</said> <rs ref="#jeanValreg">me</rs> dit tout bas 
+                              <lb/><persName ref="#Medora">miss Médora</persName>, <said who="#Medora" aloud="true">que le dernier jour de tendresse de 
+                              <lb/><rs ref="#lordB">mon cher oncle</rs> et de <rs ref="#ladyHarriet">ma chère tante</rs> soit daté de
+                              <lb/>ce lieu symbolique, <placeName ref="#merGlace" rend="italic">mer de glace</placeName> ?</said>
+                        </p>
+
+                        <p>
+                              <lb/>Comme <rs ref="#ladyHarriet">elle</rs> s’était appuyée, en <rs ref="#lordB">me</rs> parlant, sur 
+                              <lb/>la barre de fer qui entoure la plateforme du tem- <pb n="4"/>
+
+                              <cb n="16" facs="#c16" prev="#c15" next="#c17"/>
+                              &lb;ple de la Sibylle, et que le bruit des eaux du
+                              <lb/>gouffre couvrait nos voix, <rs ref="#lordB">je</rs> pus, à deux pas de 
+                              <lb/>la table où &Lord-B; était encore assis avec sa 
+                              <lb/><rs ref="#ladyB">femme</rs>, <rs ref="#lordB">m’</rs>expliquer rapidement sans en être en&lb;tendu. 
+                              <lb/><said who="#jeanValreg" aloud="true" toWhom="#Medora">— Je ne trouve rien de plaisant,</said> dis-<rs ref="#jeanValreg">je</rs> à la 
+                              <lb/>railleuse <persName ref="#Medora">Médora</persName>, <said who="#jeanValreg" aloud="true" toWhom="#Medora">dans la situation maussade et
+                              <lb/>douloureuse de ces <rs ref="#ladyHarriet #lordB">deux personnages</rs>, si char&lb;m&ans; et si parfaits individuellement, si différ&ens; 
+                              <lb/>d’eux-mêmes quand ils sont réunis. Il me semble 
+                              <lb/>que rien ne plus facile à qui joindrait un 
+                              <lb/>peu d’adresse à beaucoup de cœur, de rendre
+                              <lb/>leur désaccord moins pénible. </said>
+                              <lb/><said who="#Medora" aloud="true" toWhom="#jeanValreg">— Et <rs ref="#Medora">je</rs> vois que <rs ref="#jeanValreg">vous</rs> avez entrepris cette tâche 
+                              <lb/>méritoire ?</said>
+                              <lb/><said who="#jeanValreg" aloud="true" toWhom="#Medora">— Ce n’est pas à <rs ref="#lordB">moi</rs>, qui suis auprès d’eux un
+                              <lb/>passant étranger, qu’il appartiendrait de l’entre&lb;prendre avec chance de succès. Ce devoir est 
+                              <lb/>naturellement indiqué à la délicatesse d’un es&lb;prit de femme…</said>
+                              <lb/><said who="#Medora" aloud="true" toWhom="#jeanValreg">— Et à la générosité de ses instincts ? <rs ref="#Medora">Je</rs> <rs ref="#lordB">vous</rs>
+                              <lb/>comprends, merci ! <rs ref="#Medora">J’</rs>ai été légère dans ma con&lb;duite vis-à-vis de <rs ref="#lordB #ladyHarriet">mes par&ens;</rs>, <rs ref="#Medora">je</rs> le reconnais ; 
+                              <lb/>mais, à partir de ce jour, <rs ref="#lordB">vous</rs> verrez que <rs ref="#Medora">je</rs> sais 
+                              <lb/>profiter d’une bonne leçon.</said>
+                              <lb/><said who="#jeanValreg" aloud="true" toWhom="#Medora">— Une leçon ?...</said>
+                              <lb/><said who="#Medora" aloud="true" toWhom="#jeanValreg">— Oui, oui,c’en est une, et <rs ref="#jeanValreg">vous</rs> voyez que <rs ref="#Medora">je</rs>
+                              <lb/>la reçois avec reconnaissance.</said>
+                        </p>
+
+                        <p>
+                              <lb/><rs ref="#Medora">Elle</rs> <rs ref="#jeanValreg">me</rs> tendit, ou plutôt <rs ref="#jeanValreg">me</rs> glissa sa belle 
+                              <lb/>main, le long de la barre de fer sur laquelle nos 
+                              <lb/>coudes étaient appuyés, et, sans songer à y met&lb;tre du mystère, &je; la portai à mes lèvres par un 
+                              <lb/>retour bien naturel de gratitude. Mais, comme si 
+                              <lb/>cet échange amical eût été une audace furtive de
+                              <lb/>sa part et de la mienne, <rs ref="#Medora">elle</rs> retira vivement sa 
+
+                              <cb n="17" facs="#c17" prev="#c16" next="#c18"/>
+
+                              <lb/>main, et, se retournant vers sa <rs ref="#ladyHarriet">tante</rs>, qui ne son&lb;geait, pas plus que son <rs ref="#lordB">oncle</rs>, à nous observer, 
+                              <lb/><rs ref="#Medora">elle</rs> prétendit, comme pour motiver auprès d’eux 
+                              <lb/>sa rougeur et sa précipitation, que ce rocher à pic
+                              <lb/>lui donnait le vertige. 
+                        </p>
+
+                        <p>
+                              <lb/>Ce mouvement, qui gâtait la spontanéité de ses 
+                              <lb/>intentions et qui semblait vouloir incriminer la 
+                              <lb/>simplicité des miennes, <rs ref="#jeanValreg">me</rs> déplut un peu. <rs ref="#jeanValreg">Je
+                              <lb/>m’</rs> éloignai sans rien dire, espérant <rs ref="#jeanValreg">m'</rs>échapper et 
+                              <lb/>pouvoir aller explorer le gouffre avant mes com&lb;pagnons moins alertes. Mais ce puits de verdure 
+                              <lb/>est fermé par une solide barrière dont <rs ref="#gardien">un gar&lb;dien spécial</rs> a la clef. <rs ref="#gardien">Il</rs> était là, attendant notre
+                              <lb/>bon plaisir ; mais <rs ref="#gardien">il</rs> refusa de <rs ref="#jeanValreg">me</rs> laisser passer tout 
+                              <lb/>seul. <said who="#gardien" aloud="true" toWhom="#jeanValreg">— Non, <rs ref="#jeanValreg">monsieur</rs>,</said> me dit-<rs ref="#gardien">il</rs>, <said who="#gardien" aloud="true" toWhom="#jeanValreg">cet endroit est 
+                              <lb/>très dangereux, et <rs ref="#gardien">je</rs> suis responsable de la vie 
+                              <lb/>des personnes que <rs ref="#gardien">je</rs> conduis. Trois Anglais ont 
+                              <lb/>il y a quelques années, disparu dans le gouffre, <lb/>pour avoir voulu le visiter sans <rs ref="#gardien">moi</rs>, et comme 
+                              <lb/><rs ref="#gardien">je</rs> dois attendre <rs ref="#ladyHarriet #Medora">les dames</rs> qui sont avec <rs ref="#jeanValreg">vous</rs>, <rs ref="#gardien">je</rs>
+                              <lb/>ne peux pas vous conduire seul.</said> <said who="#gardien" aloud="true" toWhom="#tartaglia">— Oh ! oh !</said> ajou&lb;ta-t-<rs ref="#gardien">il</rs> en s’adressant à <persName ref="#tartaglia">Tartaglia</persName>, <said who="#gardien" aloud="true" toWhom="#tartaglia">qui passait au&lb;près de nous, portant deux bouteilles qu’<rs ref="#tartaglia">il</rs> venait 
+                              <lb/>de prendre dans la voiture de <rs ref="#lordB #ladyHarriet #Medora">mes Anglais,</rs> est- &lb;ce que <persName ref="#lordB">mylord</persName> va encore boire ces deux-là ?</said>
+                              <lb/><said who="#tartaglia" aloud="true" toWhom="#gardien">— Bah ! ce n’est rien,</said> répondit <persName ref="#tartaglia">Tartaglia</persName> ; <said who="#tartaglia" aloud="true" toWhom="#gardien">du 
+                              <lb/>vin de <placeName ref="#france">France</placeName>, du <placeName ref="#bordeaux">bordeaux</placeName> ! Les Anglais boivent 
+                              <lb/>ça comme de l’eau. </said>
+                              <lb/><said who="#gargien" aloud="true" toWhom="#tartaglia">— Ça <rs ref="#gardien">m’</rs>est égal,</said> reprit <rs ref="#gardien">le gardien</rs> : <said who="#gardien" aloud="true">si <rs ref="#lordB">mylord</rs>
+                              <lb/>est <foreign xml:lang="IT" rend="italic">ubbriaco</foreign>, <rs ref="#gardien">je</rs> ne le laisserai pas descendre.</said>
+                        </p>
+
+                        <p>
+                              <lb/>&Je; pensai devoir empêcher <persName ref="#lordB">lord B***</persName> de s’ex&lb;poser à une discussion de ce genre. &Je; l’ai 
+                              <lb/>toujours vu très-sobre ; mais qui sait ce qu’un 
+                              <lb/>rayon de bonne intelligence avec <rs ref="#ladyHarriet">sa femme</rs> pou                          &lb;vait apporter de changement à ses habitudes ? &Je;
+
+                              <cb n="18" facs="#c18" prev="#c17" next="#c19"/>
+
+                              <lb/>retournai donc à la table, où le bordeaux était 
+                              <lb/>déjà versé, bien que <rs ref="#ladyHarriet #Medora">les femmes</rs> fussent levées et 
+                              <lb/>en train de s’équiper pour la promenade. <rs ref="#jeanValreg">Je</rs> re&lb;marquai que <rs ref="#lordB">mon Anglais</rs> était redevenu froid et 
+                              <lb/>sérieux comme à son ordinaire. Déjà quelque pa&lb;role aigre avait été échangée entre <rs ref="#ladyHarriet">sa femme</rs> et 
+                              <lb/><rs ref="#lordB">lui</rs>, et déjà <persName ref="#Medora">Médora</persName> avait oublié ses beaux projets 
+                              <lb/>de conciliation, car <rs ref="#Medora">elle</rs> riait de la triste figure de 
+                              <lb/>son <rs ref="#lordB">oncle</rs>. <said who="#Medora" aloud="true" toWhom="#lordB">— Allons !</said> disait-<rs ref="#Medora">elle</rs> en attachant sa 
+                              <lb/>coiffe de mackintosh, <said who="#Medora" aloud="true" toWhom="#lordB"><rs ref="#lordB">vous</rs> avez fait assez de poé&lb;sie pour un jour. Le soleil s’en va, le temps mar&lb;che, et nous ne sommes pas venus ici pour por&lb;ter des santés à tous les dieux de l’Olympe.</said>
+                              <lb/><said who="#ladyHarriet" aloud="true" toWhom="#lordB">— Vous savez que l’endroit est dangereux,</said> dit 
+                              <lb/><persName ref="#ladyHarriet">lady Harriet</persName> à son <rs ref="#lordB">mari</rs> ; <said who="#ladyHarriet" aloud="true" toWhom="#lordB">si la pluie vient, il le 
+                              <lb/>sera encore davantage. Venez donc ou restez seul tout 
+                              <lb/>à fait ! </said>
+                              <lb/><said who="#lordB" aloud="true" toWhom="#ladyHarriet">— Eh bien,      <rs ref="#lordB">je</rs> reste,</said> répondit-<rs ref="#lordB">il</rs> avec une sorte 
+                              <lb/>de désespoir comique, en remplissant son verre. 
+                              <lb/><said who="#lordB" aloud="true" toWhom="#ladyHarriet">>Allez voir couler l’eau ; <rs ref="#lordB">moi</rs>, <rs ref="#lordB">je</rs> vas faire couler le 
+                              <lb/>vin !</said>
+                        </p>
+
+                        <p>
+                              <lb/>C’était une révolte flagrante. 
+                              <lb/><said who="#ladyHarriet" aloud="true" toWhom="#lordB">— Adieu donc !</said> dit <persName ref="#ladyHarriet">lady Harriet</persName> avec indigna&lb;tion, en prenant le bras de sa <rs ref="#Medora">nièce</rs>. 
+                              <lb/><said who="#lordB" aloud="true" toWhom="#jeanValreg">— <persName ref="#jeanValreg">Valreg</persName> ! buvez à ma santé, <rs ref="#lordB">je</rs> le veux,</said> s’écria 
+                              <lb/><rs ref="#lordB">mylord</rs> en me retenant par le bras. 
+                              <lb/><said who="#jeanValreg" aloud="true" toWhom="#lordB">— <rs ref="#jeanValreg">Moi</rs>, &je; ne le veux pas,</said> répondis-&je;. <said who="#jeanValreg" aloud="true" toWhom="#lordB">Ce bor &lb;deaux, par-dessus le café, serait pour <rs ref="#lordB">moi</rs> une 
+                              <lb/>médecine ; et <rs ref="#lordB">je</rs> ne comprendrais pas, d’ailleurs, <lb/>que nous pussions laisser aller sans <rs ref="#lordB #jeanValreg">nous</rs>, dans 
+                              <lb/>un endroit dangereux, <rs ref="#ladyHarriet #Medora">les femmes</rs> que <rs ref="#lordB #jeanValreg">nous</rs> ac &lb;compagnons. </said>
+                              <lb/><said who="#lordB" aloud="true" toWhom="#jeanValreg">— <rs ref="#jeanValreg">Vous</rs> avez raison !</said> dit-<rs ref="#lordB">il</rs> en faisant un effort 
+                              <lb/>pour repousser son verre.<said who="#lordB" aloud="true" toWhom="#tartaglia"> <persName ref="#tartaglia">Tartaglia</persName>, viens ici.
+                              <lb/>Bois ce vin ! bois tout ce qu’il y a dans la voitu
+
+                              <cb n="19" facs="#c19" prev="#c18" next="#c20"/>
+&lb;re, <rs ref="#lordB">je</rs> <rs ref="#tartaglia">te</rs> le commande ; et, si <rs ref="#tartaglia">tu</rs> n’es pas ivre-mort 
+                              <lb/>quand <rs ref="lordB">je</rs> reviendrai, <rs ref="#tartaglia">tu</rs> n’auras jamais plus un 
+                              <lb/>baïoque de ma main.</said>
+                        </p>
+
+                        <p>
+                              <lb/>Cette singulière fantaisie chez <rs ref="#lordB">un homme</rs> aussi 
+                              <lb/>sensé <rs ref="#lordB">me</rs> parut suspecte. <rs ref="#jeanValreg">Je</rs> vis que <persName ref="#tartaglia">Tartaglia</persName> sui&lb;vait, comme <rs ref="#jeanValreg">moi</rs>, des yeux, la démarche alan&lb;guie de <rs ref="#lordB">mylord</rs>. Il y avait trop de laisser aller 
+                              <lb/>dans ses jambes pour qu’il n’y eût pas quelque 
+                              <lb/>chose à craindre du côté de la tête. 
+                              <lb/><said who="#tartaglia" aloud="true" toWhom="#jeanValreg">— Soyez tranquille,</said>
+                              <rs ref="#jeanValreg">me</rs> dit l’intelligent et utile
+                              <lb/><persName ref="#tartaglia">Tartaglia</persName> ; <said who="#tartaglia" aloud="true" toWhom="#jeanValreg"><hi rend="italic">c’est <rs ref="#tartaglia">moi</rs> que <rs ref="#tartaglia">je</rs> vous</hi> réponds de <rs ref="#lordB">lui</rs> ! Et 
+                              <lb/>sans oublier de prendr possession du vin qu’il 
+                              <lb/>désigna comme sien en faisant à l’hôte de la Si&lb;bylle un signe rapide, <rs ref="#tartaglia">il</rs> emboîta le pas derrière 
+                              <lb/><rs ref="#lordB">l’Anglais </rs>sans faire semblant de s’occuper de <rs ref="#lordB">lui</rs>.</said>
+                              <lb/>L’hôte avait compris que <persName ref="#tartaglia">Tartaglia</persName> aimait mieux 
+                              <lb/>lui vendre cet excellent bordeaux que de le boire, 
+                              <lb/>et, avec cette perspicacité supérieure dont les 
+                              <lb/>Italiens de cette classe sont doués à la vue d’une
+                              <lb/><hi rend="italic">affaire</hi>, <rs ref="#lordB">il</rs> donna à ses garçons des ordres en con&lb;séquence. 
+                        </p>
+
+
+                        <p>
+                              <lb/>Rassuré sur le compte de <rs ref="#lordB">mon pauvre ami</rs>, &je;
+                              <lb/>le dépassai pour aller rejoindre <rs ref="#Medora #ladyHarriet">les femmes</rs> qui, 
+                              <lb/>sous la conduite du guide, descendaient déjà le 
+                              <lb/>sentier. &Medora; était, comme de coutume, en a&lb;vant, la tête en l’air, affectant le mépris du dan&lb;ger et déchirant sa robe à tous les buissons, sans 
+                              <lb/>daigner faire un mouvement pour s’en préserver. 
+                              <lb/>En toutes choses et en tous lieux, <rs ref="#Medora">elle</rs> marche
+                              <lb/>d’un air d’impératrice à qui l’univers appartient 
+                              <lb/>et doit céder ; et, s’il lui prenait envie de traver&lb;ser l’épaisseur des murs, <rs ref="#Medora">elle</rs> serait, &je; gage, é&lb;tonnée que les murs ne s’ouvrissent pas d’eux&lb;mêmes à son approche.
+                        </p>
+
+                        <p>
+                              <lb/>Ces allures de <persName ref="#Mab">reine Mab</persName> ne me rassuraient pas 
+
+                              <cb n="20" facs="#c20" prev="#c19"/>
+
+                              <lb/>plus que la démarche avinée de &Lord-B; ; mais 
+                              <lb/>&je; crus devoir offrir mon bras à <rs ref="#ladyHarriet">la tante</rs>.
+                              <lb/><said who="#ladyHarriet" aloud="true" toWhom="#jeanValreg">— Non,</said> me dit-<rs ref="#ladyHarriet">elle</rs>, <said who="#ladyHarriet" aloud="true" toWhom="#jeanValreg"> <rs ref="#ladyHarriet">j’</rs>irai prudemment, <rs ref="#ladyHarriet">je</rs>
+                              <lb/>connais le sentier, et le guide ne me quittera pas ;
+                              <lb/>mais prenez garde à &Medora;, qui est fort témé&lb;raire.</said>
+                        </p>
+
+                        <p>
+                              <lb/>&Je; doublai le pas et remarquai, avec un certain 
+                              <lb/>effroi, que &j;avais pour mon compte un peu de 
+                              <lb/>vertige. C’était comme une folle envie de courir 
+                              <lb/>sus à &Medora;, de lui prendre le bras et de <rs ref="#jeanValreg">m'</rs>é&lb; lancer en riant avec <rs ref="#Medora">elle</rs> dans ces ravissantes 
+                              <lb/>profondeurs de verdure et de rochers. Comme le 
+                              <lb/>sentier était des plus faciles, et que rien ne justi&lb;fiait les appréhensions <rs ref="#gardien">du gardien</rs>, &je; vis bien que
+                              <lb/>mon vertige était plus moral que physique, et 
+                              <lb/>qu’en <rs ref="#jeanValreg">m'</rs>occupant à empêcher les toasts trop ré&lb;pétés de &Lord-B;, &j;avais perdu la conscience 
+                              <lb/>de mon propre état. &J;avais pourtant bien discrè&lb;tement fêté le vin d’<placeName ref="#asti">Asti</placeName> et le bordeaux de la voi&lb;ture ; mais &j;avais eu chaud et soif ; peut-être 
+                              <lb/>avais-&je; été étourdi par le soleil qui nous tom&lb;bait d’aplomb sur la tête, par le rugissement et 
+                              <lb/>le mouvement de la cascade placée verticale&lb;ment devant nos yeux, par les singularités de 
+                              <lb/>&Medora;, par les expansions de &Lord-B;. Bref, 
+                              <lb/>quelle qu’en fût la cause, et quelle que fût la
+                              <lb/>tranquillité de ma conscience, &je; sentis que &j;é&lb;tais gris, mais gris à faire de sang-froid les plus 
+                              <lb/>splendides extravagances !</p>
+
+                        <signed>
+                              <lb/><persName ref="#GS">GEORGE SAND</persName>
+                              <lb/>(La suite à <date when="1857-01-23">demain.</date>)
+                        </signed>
+
+                  </div1>
+
+            </body>
+      </text>
+</TEI>
